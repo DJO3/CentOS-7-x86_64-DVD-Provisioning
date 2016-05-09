@@ -32,7 +32,7 @@ if [ ! -f /etc/sysconfig/network-scripts/ifcfg-CentOS7 ]; then
 fi
 
 # Set hostname
-defaultHost=centos7-docker
+defaultHost=centos7-docker.local
 read -p "Enter Hostname [$defaultHost]: " HOSTNAME
 HOSTNAME=${HOSTNAME:-$defaultHost}
 hostnamectl set-hostname $HOSTNAME --static
